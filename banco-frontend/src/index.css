@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0f] text-white;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+  }
+
+  .glass-hover {
+    @apply transition-all duration-200;
+  }
+
+  .glass-hover:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .gradient-blue {
+    background: linear-gradient(135deg, #1a56db 0%, #0e3ab5 100%);
+  }
+
+  .gradient-purple {
+    background: linear-gradient(135deg, #7c3aed 0%, #4f1d96 100%);
+  }
+
+  .gradient-green {
+    background: linear-gradient(135deg, #059669 0%, #065f46 100%);
+  }
+
+  .gradient-amber {
+    background: linear-gradient(135deg, #d97706 0%, #92400e 100%);
+  }
+
+  .gradient-pink {
+    background: linear-gradient(135deg, #db2777 0%, #9d174d 100%);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(26, 86, 219, 0.3);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 20px rgba(5, 150, 105, 0.3);
+  }
+}
